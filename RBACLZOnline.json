@@ -1,0 +1,40 @@
+{
+    "Name": "ICDC LZ Online Owner",
+    "IsCustom": true,
+    "Description": "Lets you manage resources in an Online Landing Zone subscription",
+    "Actions": [
+      "*"
+      ],
+    "NotActions": [
+      "Microsoft.Subscriptions/*",
+
+      "Microsoft.Capacity/*/action",
+      "Microsoft.Capacity/*/write",
+      "Microsoft.Capacity/*/delete",
+
+      "Microsoft.Authorization/*/write",
+      "Microsoft.Authorization/*/delete",
+      "Microsoft.Authorization/elevateAccess/action",
+
+      "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/write",
+      "Microsoft.Network/virtualNetworks/virtualNetworkPeerings/delete",
+
+      "Microsoft.Network/networkWatchers/write",
+      "Microsoft.Network/networkWatchers/delete",
+      "Microsoft.Network/networkWatchers/configureFlowLog/action",
+      "Microsoft.Network/networkWatchers/flowLogs/write",
+      "Microsoft.Network/networkWatchers/flowLogs/delete",
+
+      "Microsoft.Network/ddosProtectionPlans/write",
+      "Microsoft.Network/ddosProtectionPlans/delete",
+      "Microsoft.Network/ddosProtectionPlans/join/action"
+
+    ],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+      "/providers/Microsoft.Management/managementGroups/icdcroot"
+    ]
+  }
+
+
